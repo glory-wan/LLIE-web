@@ -36,6 +36,7 @@ public class ImgService {
                 "--cs", attrs.getCs(),
                 "--name", FileUtil.mainName(image),
                 "--format", FileUtil.extName(image),
+                "--save", resultDir
         };
     }
 
@@ -80,8 +81,8 @@ public class ImgService {
             result.getParentFile().mkdirs();
         }
         response.setContentType(FileUtil.getMimeType(result.getAbsolutePath()));
-        try {
-            IoUtil.copy(new FileInputStream(result), response.getOutputStream(), 2048);
+        try(FileInputStream fis = new FileInputStream(result)) {
+            IoUtil.copy(fis, response.getOutputStream(), 2048);
         } catch (IOException e) {
             throw new ImageHandleException(e.getMessage());
         } finally {
