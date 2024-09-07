@@ -1,51 +1,58 @@
 package com.lab.service;
 
+import cn.hutool.core.io.FileUtil;
+import cn.hutool.core.io.IoUtil;
 import com.lab.constant.MessageConstant;
 import com.lab.dto.ImgDTO;
-import com.lab.entity.Image;
 import com.lab.exception.ImageHandleException;
-import com.lab.utils.AliOssUtil;
+import jakarta.servlet.http.HttpServletResponse;
 import lombok.extern.slf4j.Slf4j;
-import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.stereotype.Service;
+import org.springframework.web.multipart.MultipartFile;
 
-import java.io.File;
-import java.io.FileInputStream;
-import java.io.IOException;
-import java.time.LocalDate;
-import java.time.format.DateTimeFormatter;
+import java.io.*;
+import java.util.UUID;
 
 
 @Slf4j
 @Service
 public class ImgService {
-    @Autowired
-    private AliOssUtil aliOssUtil;
-
     @Value("${web.python.env}")
     private String python;
     @Value("${web.python.commandTA}")
     private String commandTA;
+    @Value("${web.python.input-dir}")
+    private String inputDir;
     @Value("${web.python.result-dir}")
     private String resultDir;
 
-    private String[] imageDtoToArgs(Image image) {
+    private String[] imageToArgs(File image, ImgDTO attrs) {
         // 准备使用commandTA.py处理图片使用的命令行指令及参数
         return new String[]{
                 python, commandTA,
-                "--img", image.getFile_path(),
-                "--method", image.getAlgorithm(),
-                "--cs", image.getColor_space(),
-                "--name", image.getFilename(),
-                "--format", image.getExtension()
+                "--img", image.getAbsolutePath(),
+                "--method", attrs.getMethod(),
+                "--cs", attrs.getCs(),
+                "--name", FileUtil.mainName(image),
+                "--format", FileUtil.extName(image),
         };
     }
 
-    public String handle(ImgDTO imgDto) {
-        Image image = new Image(imgDto);
+    public void handle(MultipartFile img, ImgDTO attrs, HttpServletResponse response) {
+        // 将图片保存在本地
+        File image = new File(inputDir + "/" + img.getOriginalFilename());
+        if (!image.getParentFile().exists()) {
+            image.getParentFile().mkdirs();
+        }
+        try {
+            img.transferTo(image);
+        } catch (IOException e) {
+            throw new ImageHandleException(e.getMessage());
+        }
+
         // 执行Python脚本
-        String[] args = imageDtoToArgs(image);
+        String[] args = imageToArgs(image, attrs);
         try {
             Process proc = Runtime.getRuntime().exec(args);
             proc.waitFor();
@@ -54,10 +61,12 @@ public class ImgService {
             if (bytes.length > 0) {
                 String error = new String(bytes);
                 // 忽略warning
-                if(!error.contains(MessageConstant.PYTHON_WARNING)){
+                if (!error.contains(MessageConstant.PYTHON_WARNING)) {
                     log.error(new String(bytes));
                     throw new ImageHandleException(MessageConstant.PYTHON_ERROR);
                 }
+                log.warn(new String(bytes));
+                log.info(MessageConstant.IMG_HANDLE_SUCCESS);
             } else {
                 log.info(MessageConstant.IMG_HANDLE_SUCCESS);
             }
@@ -65,17 +74,19 @@ public class ImgService {
             throw new ImageHandleException(e.getMessage());
         }
 
-        // 上传至OSS
-        File file = new File(resultDir + "/" + image.getFilename() + "." + image.getExtension());
-        try (FileInputStream fis = new FileInputStream(file)) {
-            String directory = aliOssUtil.createDateDir(false); // 创建日期目录
-            // 上传文件至指定目录，并删除本地文件
-            return aliOssUtil.upload(fis.readAllBytes(),
-                    directory + "/" + image.getFilename() + "." + image.getExtension());
+        // 将结果写入响应流
+        File result = new File(resultDir + "/" + image.getName());
+        if (!result.getParentFile().exists()) {
+            result.getParentFile().mkdirs();
+        }
+        response.setContentType(FileUtil.getMimeType(result.getAbsolutePath()));
+        try {
+            IoUtil.copy(new FileInputStream(result), response.getOutputStream(), 2048);
         } catch (IOException e) {
             throw new ImageHandleException(e.getMessage());
         } finally {
-            file.delete();
+            result.delete();
+            image.delete();
         }
     }
 }

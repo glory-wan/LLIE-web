@@ -13,12 +13,8 @@ server:
     max-swallow-size: 30MB
 
 web:
-  alioss:
-    endpoint: ${web.alioss.endpoint}
-    bucket-name: ${web.alioss.bucket-name}
-    access-key-id: ${web.alioss.access-key-id}
-    access-key-secret: ${web.alioss.access-key-secret}
   python:
     env: ${web.python.env}
     commandTA: ${web.python.commandTA}
+    input-dir: ${web.python.input-dir}
     result-dir: ${web.python.result-dir}

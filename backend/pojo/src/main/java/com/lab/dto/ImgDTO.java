@@ -2,9 +2,10 @@ package com.lab.dto;
 
 import lombok.Data;
 
+import java.io.File;
+
 @Data
 public class ImgDTO {
-    private String file_path;
-    private String algorithm;
-    private String color_space;
+    private String method;
+    private String cs;
 }
