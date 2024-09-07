@@ -23,6 +23,7 @@
 <script setup>
 import { ref } from 'vue';
 import api from '@/api/request.js';
+import { ElMessage } from 'element-plus';
 
 const props = defineProps({ originalImage: String })
 const algorithm = ref(null);
