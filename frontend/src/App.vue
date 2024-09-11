@@ -8,7 +8,6 @@
     </el-tab-pane>
   </el-tabs>
   <div class="bottom">
-    <div class="line"></div>
     <a href="https://beian.miit.gov.cn/" target="_blank">蜀ICP备2024057466号-3</a>
     <div style="height: 20px;"></div>
   </div>
@@ -33,25 +32,20 @@ body {
   color: #6b778c;
 }
 
-.line {
-  width: 1180px;
-  height: 0.5px;
-  background-color: #d7d8d9;
-  margin: 10px auto;
-}
-
 a {
   text-decoration: none;
   color: #808080;
   font-size: 12px;
 }
-a:hover{
+
+a:hover {
   color: #5a9cf8;
 }
-.bottom{
-  position: fixed; 
-  bottom: 0; 
-  width: 100%; 
+
+.bottom {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
   text-align: center;
 }
 </style>

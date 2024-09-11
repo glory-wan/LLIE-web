@@ -12,15 +12,11 @@
       </div>
 
       <div class="button">
-        <Upload @file-change="handleFileChange"></Upload>
-      </div>
-
-      <div>
-        <Radio :originalImage="originalImage" @processed-image="handleProcessedImage" />
+        <Upload @file-change="handleFileChange" @processed-image="handleProcessedImage"></Upload>
       </div>
     </div>
 
-    <div class="flex-item">
+    <div class=" flex-item">
       <h3>处理后图片</h3>
       <div v-if="processedImage" style="display: flex;flex-direction: column;">
         <img class="image" :src="processedImage" alt="Processed Image" />
@@ -28,7 +24,7 @@
           下载图片
         </el-button>
         <el-button type="primary" size="large" @click="refreshPage"
-          style="width: 90px;margin-top: 20px;margin-left: 0px;">
+          style="width: 90px;margin-top: 8px;margin-left: 0px;">
           清除图片
         </el-button>
       </div>
@@ -40,7 +36,6 @@
 <script setup lang="ts">
 import { ref } from 'vue';
 import Upload from './Upload.vue';
-import Radio from './Radio.vue';
 
 const originalImage = ref(null);
 const processedImage = ref(null);
@@ -50,21 +45,27 @@ const handleFileChange = (data: string) => {
   originalImage.value = data;
 };
 
-const handleProcessedImage = (data: string) => {
+const handleProcessedImage = (data: String) => {
   console.log('Processed image:', data);
   processedImage.value = data;
 };
-// 下载处理后的图片
+
+// 创建一个临时的 <a> 标签下载处理后的图片
 const downloadImage = () => {
   if (!processedImage.value) return;
 
   const link = document.createElement('a');
   link.href = processedImage.value;
-  link.download = 'image.jpg';
+
+  const parts = processedImage.value.split(',');
+  const mime = parts[0].match(/:(.*?);/)[1];
+  link.download = 'image.' + mime.split('/')[1];
+
   document.body.appendChild(link);
   link.click();
   document.body.removeChild(link);
 };
+
 // 刷新页面以清除图片
 const refreshPage = () => {
   window.location.reload();
@@ -105,6 +106,13 @@ const refreshPage = () => {
   flex-basis: calc(40% - 10px);
   margin: 5px;
 }
+
+.proc-img-container {
+  display: flex;
+  flex-direction: column;
+
+}
+
 
 /* 图片样式 */
 .image {
