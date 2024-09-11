@@ -22,9 +22,10 @@ public class ImgController {
     private ImgService imgService;
 
     @PostMapping
-    public void handleImg(MultipartFile file, ImgDTO attrs, HttpServletResponse response) {
+    public Result<String> handleImg(MultipartFile file, ImgDTO attrs, HttpServletResponse response) {
         log.info("处理图片：{} {}", file.getOriginalFilename(), attrs);
-        imgService.handle(file, attrs, response);
+        String base64=imgService.handle(file, attrs, response);
+        return Result.success(base64);
     }
 
 }

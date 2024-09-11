@@ -12,6 +12,7 @@ import org.springframework.stereotype.Service;
 import org.springframework.web.multipart.MultipartFile;
 
 import java.io.*;
+import java.util.Base64;
 import java.util.UUID;
 
 
@@ -40,7 +41,7 @@ public class ImgService {
         };
     }
 
-    public void handle(MultipartFile img, ImgDTO attrs, HttpServletResponse response) {
+    public String handle(MultipartFile img, ImgDTO attrs, HttpServletResponse response) {
         // 将图片保存在本地
         File image = new File(inputDir + "/" + img.getOriginalFilename());
         if (!image.getParentFile().exists()) {
@@ -75,14 +76,16 @@ public class ImgService {
             throw new ImageHandleException(e.getMessage());
         }
 
-        // 将结果写入响应流
+        // 将图片转化为base64返回给前端
         File result = new File(resultDir + "/" + image.getName());
         if (!result.getParentFile().exists()) {
             result.getParentFile().mkdirs();
         }
-        response.setContentType(FileUtil.getMimeType(result.getAbsolutePath()));
         try(FileInputStream fis = new FileInputStream(result)) {
-            IoUtil.copy(fis, response.getOutputStream(), 2048);
+            byte[] bytes = new byte[fis.available()];
+            fis.read(bytes);
+            return "data:"+FileUtil.getMimeType(result.getAbsolutePath())+";base64,"+Base64.getEncoder().encodeToString(bytes);
+            // IoUtil.copy(fis, response.getOutputStream(), 2048);
         } catch (IOException e) {
             throw new ImageHandleException(e.getMessage());
         } finally {
