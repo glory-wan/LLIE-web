@@ -48,6 +48,7 @@ const uploadImage = async (e) => {
 .upload-container {
     position: relative;
     display: inline-block;
+    margin-top: 8px;
 }
 
 .upload-button {
