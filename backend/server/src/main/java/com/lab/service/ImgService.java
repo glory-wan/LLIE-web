@@ -1,5 +1,6 @@
 package com.lab.service;
 
+import cn.hutool.core.img.ImgUtil;
 import cn.hutool.core.io.FileUtil;
 import cn.hutool.core.io.IoUtil;
 import com.lab.constant.MessageConstant;
@@ -43,7 +44,7 @@ public class ImgService {
 
     public String handle(MultipartFile img, ImgDTO attrs, HttpServletResponse response) {
         // 将图片保存在本地
-        File image = new File(inputDir + "/" + img.getOriginalFilename());
+        File image = FileUtil.file(inputDir + "/" + img.getOriginalFilename());
         if (!image.getParentFile().exists()) {
             image.getParentFile().mkdirs();
         }
@@ -76,16 +77,22 @@ public class ImgService {
             throw new ImageHandleException(e.getMessage());
         }
 
-        // 将图片转化为base64返回给前端
-        File result = new File(resultDir + "/" + image.getName());
+        File result = FileUtil.file(resultDir + "/" + image.getName());
         if (!result.getParentFile().exists()) {
             result.getParentFile().mkdirs();
         }
-        try(FileInputStream fis = new FileInputStream(result)) {
+        // 大于4MB进行压缩
+        float size = (float) result.length() / 1024 / 1024;
+        if (size > 4) {
+            log.info("图片正在进行压缩...");
+            ImgUtil.scale(result, result, (4/size));
+        }
+        // 将图片转化为base64返回给前端
+        try (BufferedInputStream fis = FileUtil.getInputStream(result)) {
             byte[] bytes = new byte[fis.available()];
             fis.read(bytes);
-            return "data:"+FileUtil.getMimeType(result.getAbsolutePath())+";base64,"+Base64.getEncoder().encodeToString(bytes);
-            // IoUtil.copy(fis, response.getOutputStream(), 2048);
+            return "data:" + FileUtil.getMimeType(result.getAbsolutePath())
+                    + ";base64," + Base64.getEncoder().encodeToString(bytes);
         } catch (IOException e) {
             throw new ImageHandleException(e.getMessage());
         } finally {
