@@ -85,8 +85,7 @@ const processImage = async () => {
                 'Content-Type': 'multipart/form-data',
             },
         });
-        // console.log('Image processed successfully:', response.data);
-        console.log(response.data.data)
+        // console.log(response.data.data)
         emits('processed-image', response.data.data);
         processing.value = false;
     } catch (error) {

@@ -41,12 +41,12 @@ const originalImage = ref(null);
 const processedImage = ref(null);
 
 const handleFileChange = (data: string) => {
-  console.log('File changed:', data);
+  console.log('File changed:', new Blob([data]).size / 1024 / 1024, "MB");
   originalImage.value = data;
 };
 
-const handleProcessedImage = (data: String) => {
-  console.log('Processed image:', data);
+const handleProcessedImage = (data: string) => {
+  console.log('Processed image:', new Blob([data]).size / 1024 / 1024, "MB");
   processedImage.value = data;
 };
 
