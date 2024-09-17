@@ -100,6 +100,7 @@ const refreshPage = () => {
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
+  justify-content: space-between;
 }
 
 .flex-item {
