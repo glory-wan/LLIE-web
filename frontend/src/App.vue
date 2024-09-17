@@ -10,7 +10,7 @@
     </el-tabs>
     <footer class="bottom">
       <a href="https://beian.miit.gov.cn/" target="_blank">蜀ICP备2024057466号-3</a>
-      <div style="height: 20px;"></div>
+      <div style="height: 10px;"></div>
     </footer>
   </div>
 </template>
