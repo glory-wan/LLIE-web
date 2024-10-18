@@ -1,8 +1,6 @@
 <template>
     <div class="about-top">
         <h1 class="about-top-one">实验室介绍</h1>
-        <!-- <p style="margin-left: 100px;">项目地址：<a href="https://github.com/glory-wan/LLIE-Lib">LLIE-Lib</a></p> -->
-        <p class="about-top-two">实验室简介</p>
     </div>
     <div class="introduce">
         <div class="introduce-list">
