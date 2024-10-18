@@ -7,14 +7,14 @@
     <div class="introduce">
         <div class="introduce-list">
             <a href="#">
-                <img src="../../images/lls.png"
+                <img src="../../images/lls.webp"
                     alt="">
             </a>
             <div class="introduce-list-two"><p>简介</p></div>
         </div>
         <div class="introduce-list">
             <a href="https://shazhou01.github.io/">
-                <img src="../../images/djz.png"
+                <img src="../../images/djz.webp"
                     alt="">
             </a>
             <div class="introduce-list-two"><p>简介</p></div>
@@ -42,14 +42,14 @@
         </div>
         <div class="introduce-list">
             <a href="https://ln3214.github.io/">
-                <img src="../../images/lwj.png"
+                <img src="../../images/lwj.webp"
                     alt="">
             </a>
             <div class="introduce-list-two"><p>简介</p></div>
         </div>
         <div class="introduce-list">
             <a href="https://7dayu6.github.io/">
-                <img src="../../images/lxq.png"
+                <img src="../../images/lxq.webp"
                     alt="">
             </a>
             <div class="introduce-list-two"><p>简介</p></div>
@@ -63,7 +63,7 @@
         </div>
         <div class="introduce-list">
             <a href="http://www.sunzimu.xyz/">
-                <img src="../../images/szm.png"
+                <img src="../../images/szm.webp"
                     alt="">
             </a>
             <div class="introduce-list-two"><p>简介</p></div>
@@ -77,14 +77,14 @@
         </div>
         <div class="introduce-list">
             <a href="https://glory-wan.cn/">
-                <img src="../../images/wgr.png"
+                <img src="../../images/wgr.webp"
                     alt="">
             </a>
             <div class="introduce-list-two"><p>简介</p></div>
         </div>
         <div class="introduce-list">
             <a href="#">
-                <img src="../../images/zhl.png"
+                <img src="../../images/zhl.webp"
                     alt="">
             </a>
             <div class="introduce-list-two"><p>简介</p></div>
@@ -98,7 +98,7 @@
         </div>
         <div class="introduce-list">
             <a href="http://www.bz2116.cn/">
-                <img src="../../images/zy.png"
+                <img src="../../images/zy.webp"
                     alt="">
             </a>
             <div class="introduce-list-two"><p>简介</p></div>
