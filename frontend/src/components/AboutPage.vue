@@ -13,6 +13,13 @@
             <div class="introduce-list-two"><p>简介</p></div>
         </div>
         <div class="introduce-list">
+            <a href="https://glory-wan.cn/">
+                <img src="../../images/wgr.webp"
+                    alt="">
+            </a>
+            <div class="introduce-list-two"><p>简介</p></div>
+        </div>
+        <div class="introduce-list">
             <a href="https://shazhou01.github.io/">
                 <img src="../../images/djz.webp"
                     alt="">
@@ -71,13 +78,6 @@
         <div class="introduce-list">
             <a href="https://kyletang-0711.github.io/">
                 <img src="../../images/tt.webp"
-                    alt="">
-            </a>
-            <div class="introduce-list-two"><p>简介</p></div>
-        </div>
-        <div class="introduce-list">
-            <a href="https://glory-wan.cn/">
-                <img src="../../images/wgr.webp"
                     alt="">
             </a>
             <div class="introduce-list-two"><p>简介</p></div>
