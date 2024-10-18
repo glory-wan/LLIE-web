@@ -7,31 +7,115 @@
     <div class="introduce">
         <div class="introduce-list">
             <a href="#">
-                <img src="https://ts1.cn.mm.bing.net/th/id/R-C.9c4beeff5af1abc0ef6c7ba3d673bfe9?rik=4wuGUMDXxudlgA&riu=http%3a%2f%2fimg.netbian.com%2ffile%2f2023%2f0329%2f2257209tzEy.jpg&ehk=i%2brXr7T%2bso1jlmUXGw0QSlpyI7Q11MNl2d9EkRdff6g%3d&risl=&pid=ImgRaw&r=0"
-                    alt="">
+                <img src="../../images/lls.png" alt="">
             </a>
-            <div class="introduce-list-two"><p>简介</p></div>
+            <div class="introduce-list-two">
+                <p>指导老师：刘俊</p>
+            </div>
+        </div>
+        <div class="introduce-list">
+            <a href="https://shazhou01.github.io/">
+                <img src="../../images/djz.png" alt="">
+            </a>
+            <div class="introduce-list-two">
+                <p>杜锦洲</p>
+            </div>
         </div>
         <div class="introduce-list">
             <a href="#">
-                <img src="https://ts1.cn.mm.bing.net/th/id/R-C.9c4beeff5af1abc0ef6c7ba3d673bfe9?rik=4wuGUMDXxudlgA&riu=http%3a%2f%2fimg.netbian.com%2ffile%2f2023%2f0329%2f2257209tzEy.jpg&ehk=i%2brXr7T%2bso1jlmUXGw0QSlpyI7Q11MNl2d9EkRdff6g%3d&risl=&pid=ImgRaw&r=0"
-                    alt="">
+                <img src="../../images/hjz.webp" alt="">
             </a>
-            <div class="introduce-list-two"><p>简介</p></div>
-        </div> 
+            <div class="introduce-list-two">
+                <p>洪佳智</p>
+            </div>
+        </div>
+        <div class="introduce-list">
+            <a href="https://humbleb11.github.io/">
+                <img src="../../images/hlf.webp" alt="">
+            </a>
+            <div class="introduce-list-two">
+                <p>黄林峰</p>
+            </div>
+        </div>
+        <div class="introduce-list">
+            <a href="https://mystic2004.github.io/">
+                <img src="../../images/lhh.webp" alt="">
+            </a>
+            <div class="introduce-list-two">
+                <p>刘桦桦</p>
+            </div>
+        </div>
+        <div class="introduce-list">
+            <a href="https://ln3214.github.io/">
+                <img src="../../images/lwj.png" alt="">
+            </a>
+            <div class="introduce-list-two">
+                <p>罗文俊</p>
+            </div>
+        </div>
+        <div class="introduce-list">
+            <a href="https://7dayu6.github.io/">
+                <img src="../../images/lxq.png" alt="">
+            </a>
+            <div class="introduce-list-two">
+                <p>刘小琪</p>
+            </div>
+        </div>
         <div class="introduce-list">
             <a href="#">
-                <img src="https://ts1.cn.mm.bing.net/th/id/R-C.9c4beeff5af1abc0ef6c7ba3d673bfe9?rik=4wuGUMDXxudlgA&riu=http%3a%2f%2fimg.netbian.com%2ffile%2f2023%2f0329%2f2257209tzEy.jpg&ehk=i%2brXr7T%2bso1jlmUXGw0QSlpyI7Q11MNl2d9EkRdff6g%3d&risl=&pid=ImgRaw&r=0"
-                    alt="">
+                <img src="../../images/slh.webp" alt="">
             </a>
-            <div class="introduce-list-two"><p>简介</p></div>
-        </div> 
+            <div class="introduce-list-two">
+                <p>石良昊</p>
+            </div>
+        </div>
+        <div class="introduce-list">
+            <a href="http://www.sunzimu.xyz/">
+                <img src="../../images/szm.png" alt="">
+            </a>
+            <div class="introduce-list-two">
+                <p>孙子木</p>
+            </div>
+        </div>
+        <div class="introduce-list">
+            <a href="https://kyletang-0711.github.io/">
+                <img src="../../images/tt.webp" alt="">
+            </a>
+            <div class="introduce-list-two">
+                <p>唐堂</p>
+            </div>
+        </div>
+        <div class="introduce-list">
+            <a href="https://glory-wan.cn/">
+                <img src="../../images/wgr.png" alt="">
+            </a>
+            <div class="introduce-list-two">
+                <p>万光荣</p>
+            </div>
+        </div>
         <div class="introduce-list">
             <a href="#">
-                <img src="https://ts1.cn.mm.bing.net/th/id/R-C.9c4beeff5af1abc0ef6c7ba3d673bfe9?rik=4wuGUMDXxudlgA&riu=http%3a%2f%2fimg.netbian.com%2ffile%2f2023%2f0329%2f2257209tzEy.jpg&ehk=i%2brXr7T%2bso1jlmUXGw0QSlpyI7Q11MNl2d9EkRdff6g%3d&risl=&pid=ImgRaw&r=0"
-                    alt="">
+                <img src="../../images/zhl.png" alt="">
             </a>
-            <div class="introduce-list-two"><p>简介</p></div>
+            <div class="introduce-list-two">
+                <p>朱昊良</p>
+            </div>
+        </div>
+        <div class="introduce-list">
+            <a href="https://bainianzzz.github.io/bainianzzz-blog/">
+                <img src="../../images/zqy.webp" alt="">
+            </a>
+            <div class="introduce-list-two">
+                <p>周启飏</p>
+            </div>
+        </div>
+        <div class="introduce-list">
+            <a href="http://www.bz2116.cn/">
+                <img src="../../images/zy.png" alt="">
+            </a>
+            <div class="introduce-list-two">
+                <p>赵耀</p>
+            </div>
         </div>
 
     </div>
@@ -39,13 +123,14 @@
 
 
 <style>
-.introduce-list-two{
+.introduce-list-two {
     width: 250px;
     height: 200px;
     /* background: #8f7e7e; */
 }
-.introduce-list-two p{
-  margin-left: 20px;
+
+.introduce-list-two p {
+    margin-left: 20px;
 }
 
 .about-top {
@@ -93,6 +178,7 @@ img {
 }
 
 /* 手机端适配 */
+
 @media screen and (max-width: 768px) {
     img {
         width: 100px;
@@ -105,6 +191,12 @@ img {
 
     .introduce {
         justify-content: space-around;
+    }
+
+    .about-top-two {
+        display: block;
+        margin-top: 60px;
+        margin-left: -160px;
     }
 }
 
