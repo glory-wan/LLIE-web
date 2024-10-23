@@ -7,21 +7,14 @@
     <div class="introduce">
         <div class="introduce-list">
             <a href="#">
-                <img src="../../images/lls.webp"
+                <img src="../../images/lls.png"
                     alt="">
             </a>
-            <div class="introduce-list-two"><p>简介</p></div>
-        </div>
-        <div class="introduce-list">
-            <a href="https://glory-wan.cn/">
-                <img src="../../images/wgr.webp"
-                    alt="">
-            </a>
-            <div class="introduce-list-two"><p>简介</p></div>
+            <div class="introduce-list-two"><p>简介1</p></div>
         </div>
         <div class="introduce-list">
             <a href="https://shazhou01.github.io/">
-                <img src="../../images/djz.webp"
+                <img src="../../images/djz.png"
                     alt="">
             </a>
             <div class="introduce-list-two"><p>简介</p></div>
@@ -49,14 +42,14 @@
         </div>
         <div class="introduce-list">
             <a href="https://ln3214.github.io/">
-                <img src="../../images/lwj.webp"
+                <img src="../../images/lwj.png"
                     alt="">
             </a>
             <div class="introduce-list-two"><p>简介</p></div>
         </div>
         <div class="introduce-list">
             <a href="https://7dayu6.github.io/">
-                <img src="../../images/lxq.webp"
+                <img src="../../images/lxq.png"
                     alt="">
             </a>
             <div class="introduce-list-two"><p>简介</p></div>
@@ -66,11 +59,11 @@
                 <img src="../../images/slh.webp"
                     alt="">
             </a>
-            <div class="introduce-list-two"><p>简介</p></div>
+            <div class="introduce-list-two"><p>简介1</p></div>
         </div>
         <div class="introduce-list">
             <a href="http://www.sunzimu.xyz/">
-                <img src="../../images/szm.webp"
+                <img src="../../images/szm.png"
                     alt="">
             </a>
             <div class="introduce-list-two"><p>简介</p></div>
@@ -83,8 +76,15 @@
             <div class="introduce-list-two"><p>简介</p></div>
         </div>
         <div class="introduce-list">
+            <a href="https://glory-wan.cn/">
+                <img src="../../images/wgr.png"
+                    alt="">
+            </a>
+            <div class="introduce-list-two"><p>简介1</p></div>
+        </div>
+        <div class="introduce-list">
             <a href="#">
-                <img src="../../images/zhl.webp"
+                <img src="../../images/zhl.png"
                     alt="">
             </a>
             <div class="introduce-list-two"><p>简介</p></div>
@@ -98,10 +98,10 @@
         </div>
         <div class="introduce-list">
             <a href="http://www.bz2116.cn/">
-                <img src="../../images/zy.webp"
+                <img src="../../images/zy.png"
                     alt="">
             </a>
-            <div class="introduce-list-two"><p>简介</p></div>
+            <div class="introduce-list-two"><p>简介1</p></div>
         </div>
 
     </div>
@@ -109,13 +109,13 @@
 
 
 <style>
-.introduce-list-two{
-    width: 250px;
+.introduce-list-two {
+    width: 200px;
     height: 200px;
-    /* background: #8f7e7e; */
 }
-.introduce-list-two p{
-  margin-left: 20px;
+
+.introduce-list-two p {
+    margin-left: 20px;
 }
 
 .about-top {
@@ -138,9 +138,15 @@
 .introduce {
     display: flex;
     margin-top: 20px;
-    flex-direction: row;
+    flex-direction: column;
     flex-wrap: wrap;
     justify-content: center;
+    align-items: center;
+}
+
+.introduces{
+    display: flex;
+    flex-direction: row;
 }
 
 .introduce-list {
@@ -156,8 +162,8 @@
 }
 
 img {
-    width: 200px;
-    height: 200px;
+    width: 150px;
+    height: 150px;
     border-radius: 50%;
     margin-bottom: 15px;
 }
@@ -177,10 +183,15 @@ img {
     .introduce {
         justify-content: space-around;
     }
+
     .about-top-two {
-        display: block; 
-        margin-top: 60px; 
-        margin-left: -160px; 
+        display: block;
+        margin-top: 60px;
+        margin-left: -160px;
+    }
+    .introduces {
+        flex-direction: column;
+        align-items: center;
     }
 }
 
@@ -199,4 +210,6 @@ img {
         margin: 10px 0;
     }
 }
+
+
 </style>
