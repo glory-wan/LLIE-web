@@ -5,103 +5,136 @@
         <p class="about-top-two">实验室简介</p>
     </div>
     <div class="introduce">
-        <div class="introduce-list">
-            <a href="#">
-                <img src="../../images/lls.png"
-                    alt="">
-            </a>
-            <div class="introduce-list-two"><p>简介1</p></div>
+        <div class="introduces">
+            <div class="introduce-list">
+                <a href="#">
+                    <img src="../../images/lls.png" alt="">
+                </a>
+                <div class="introduce-list-two">
+                    <p>简介</p>
+                </div>
+            </div>
+            <div class="introduce-list">
+                <a href="https://shazhou01.github.io/">
+                    <img src="../../images/djz.png" alt="">
+                </a>
+                <div class="introduce-list-two">
+                    <p>简介</p>
+                </div>
+            </div>
+            <div class="introduce-list">
+                <a href="#">
+                    <img src="../../images/hjz.webp" alt="">
+                </a>
+                <div class="introduce-list-two">
+                    <p>简介</p>
+                </div>
+            </div>
         </div>
-        <div class="introduce-list">
-            <a href="https://shazhou01.github.io/">
-                <img src="../../images/djz.png"
-                    alt="">
-            </a>
-            <div class="introduce-list-two"><p>简介</p></div>
-        </div> 
-        <div class="introduce-list">
-            <a href="#">
-                <img src="../../images/hjz.webp"
-                    alt="">
-            </a>
-            <div class="introduce-list-two"><p>简介</p></div>
-        </div> 
-        <div class="introduce-list">
-            <a href="https://humbleb11.github.io/">
-                <img src="../../images/hlf.webp"
-                    alt="">
-            </a>
-            <div class="introduce-list-two"><p>简介</p></div>
+        <div class="introduces"> 
+            <div class="introduce-list">
+                <a href="https://humbleb11.github.io/">
+                    <img src="../../images/hlf.webp" alt="">
+                </a>
+                <div class="introduce-list-two">
+                    <p>简介</p>
+                </div>
+            </div>
+            <div class="introduce-list">
+                <a href="https://mystic2004.github.io/">
+                    <img src="../../images/lhh.webp" alt="">
+                </a>
+                <div class="introduce-list-two">
+                    <p>简介</p>
+                </div>
+            </div>
+            <div class="introduce-list">
+                <a href="https://ln3214.github.io/">
+                    <img src="../../images/lwj.png" alt="">
+                </a>
+                <div class="introduce-list-two">
+                    <p>简介</p>
+                </div>
+            </div>
         </div>
-        <div class="introduce-list">
-            <a href="https://mystic2004.github.io/">
-                <img src="../../images/lhh.webp"
-                    alt="">
-            </a>
-            <div class="introduce-list-two"><p>简介</p></div>
+        <div class="introduces"> 
+            <div class="introduce-list">
+                <a href="https://7dayu6.github.io/">
+                    <img src="../../images/lxq.png" alt="">
+                </a>
+                <div class="introduce-list-two">
+                    <p>简介</p>
+                </div>
+            </div>
+            <div class="introduce-list">
+                <a href="#">
+                    <img src="../../images/slh.webp" alt="">
+                </a>
+                <div class="introduce-list-two">
+                    <p>简介</p>
+                </div>
+            </div>
+            <div class="introduce-list">
+                <a href="http://www.sunzimu.xyz/">
+                    <img src="../../images/szm.png" alt="">
+                </a>
+                <div class="introduce-list-two">
+                    <p>简介</p>
+                </div>
+            </div>
         </div>
-        <div class="introduce-list">
-            <a href="https://ln3214.github.io/">
-                <img src="../../images/lwj.png"
-                    alt="">
-            </a>
-            <div class="introduce-list-two"><p>简介</p></div>
+        <div class="introduces"> 
+            <div class="introduce-list">
+                <a href="http://www.bz2116.cn/">
+                    <img src="../../images/zy.png" alt="">
+                </a>
+                <div class="introduce-list-two">
+                    <p>简介</p>
+                </div>
+            </div>
+            <div class="introduce-list">
+                <a href="https://glory-wan.cn/">
+                    <img src="../../images/wgr.png" alt="">
+                </a>
+                <div class="introduce-list-two">
+                    <p>简介</p>
+                </div>
+            </div>
+            <div class="introduce-list">
+                <a href="#">
+                    <img src="../../images/zhl.png" alt="">
+                </a>
+                <div class="introduce-list-two">
+                    <p>简介</p>
+                </div>
+            </div>
         </div>
-        <div class="introduce-list">
-            <a href="https://7dayu6.github.io/">
-                <img src="../../images/lxq.png"
-                    alt="">
-            </a>
-            <div class="introduce-list-two"><p>简介</p></div>
-        </div>
-        <div class="introduce-list">
-            <a href="#">
-                <img src="../../images/slh.webp"
-                    alt="">
-            </a>
-            <div class="introduce-list-two"><p>简介1</p></div>
-        </div>
-        <div class="introduce-list">
-            <a href="http://www.sunzimu.xyz/">
-                <img src="../../images/szm.png"
-                    alt="">
-            </a>
-            <div class="introduce-list-two"><p>简介</p></div>
-        </div>
-        <div class="introduce-list">
-            <a href="https://kyletang-0711.github.io/">
-                <img src="../../images/tt.webp"
-                    alt="">
-            </a>
-            <div class="introduce-list-two"><p>简介</p></div>
-        </div>
-        <div class="introduce-list">
-            <a href="https://glory-wan.cn/">
-                <img src="../../images/wgr.png"
-                    alt="">
-            </a>
-            <div class="introduce-list-two"><p>简介1</p></div>
-        </div>
-        <div class="introduce-list">
-            <a href="#">
-                <img src="../../images/zhl.png"
-                    alt="">
-            </a>
-            <div class="introduce-list-two"><p>简介</p></div>
-        </div>
-        <div class="introduce-list">
-            <a href="#">
-                <img src="../../images/zqy.webp"
-                    alt="">
-            </a>
-            <div class="introduce-list-two"><p>简介</p></div>
-        </div>
-        <div class="introduce-list">
-            <a href="http://www.bz2116.cn/">
-                <img src="../../images/zy.png"
-                    alt="">
-            </a>
-            <div class="introduce-list-two"><p>简介1</p></div>
+
+        <div class="introduces"> 
+            <div class="introduce-list">
+                <a href="#">
+                    <img src="../../images/zqy.webp" alt="">
+                </a>
+                <div class="introduce-list-two">
+                    <p>简介</p>
+                </div>
+            </div>
+            <div class="introduce-list">
+                <a href="https://kyletang-0711.github.io/">
+                    <img src="../../images/tt.webp" alt="">
+                </a>
+                <div class="introduce-list-two">
+                    <p>简介</p>
+                </div>
+            </div>
+            <div class="introduce-list">
+                <a href="https://zlzzll.github.io/">
+                    <img src="../../images/zl.png" alt="">
+                </a>
+                <div class="introduce-list-two">
+                    <p>简介</p>
+                </div>
+            </div>
         </div>
 
     </div>
