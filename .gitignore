@@ -32,24 +32,12 @@ frontend/*.sw?
 
 frontend/*.tsbuildinfo
 
-# backend
-backend/**/target/
-backend/!.mvn/wrapper/maven-wrapper.jar
-backend/!**/src/main/**/target/
-backend/!**/src/test/**/target/
-
-### IntelliJ IDEA ###
-backend/.idea/modules.xml
-backend/.idea/jarRepositories.xml
-backend/.idea/compiler.xml
-backend/.idea/libraries/
+### pycharm ###
+backend/.idea
+**/__pycache__
 backend/*.iws
 backend/*.iml
 backend/*.ipr
-
-# properties
-backend/**/application-dev.yml
-backend/**/application-prod.yml
 
 ### Eclipse ###
 backend/.apt_generated
