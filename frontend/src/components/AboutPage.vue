@@ -150,7 +150,6 @@
 .introduce {
     display: flex;
     margin-top: 20px;
-    flex-direction: column;
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
@@ -183,11 +182,6 @@ img {
 /* 手机端适配 */
 
 @media screen and (max-width: 768px) {
-    img {
-        width: 100px;
-        height: 100px;
-    }
-
     .introduce-list {
         margin-right: 50px;
     }
