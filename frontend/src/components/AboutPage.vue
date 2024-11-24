@@ -3,7 +3,6 @@
         <h1 class="about-top-one">实验室介绍</h1>
     </div>
     <div class="introduce">
-<<<<<<< HEAD
         <div class="introduce-list">
             <a href="#">
                 <img src="../../images/lls.png" alt="">
@@ -114,137 +113,6 @@
             </a>
             <div class="introduce-list-two">
                 <p>赵耀</p>
-=======
-        <div class="introduces">
-            <div class="introduce-list">
-                <a href="#">
-                    <img src="../../images/lls.png" alt="">
-                </a>
-                <div class="introduce-list-two">
-                    <p>简介</p>
-                </div>
-            </div>
-            <div class="introduce-list">
-                <a href="https://shazhou01.github.io/">
-                    <img src="../../images/djz.png" alt="">
-                </a>
-                <div class="introduce-list-two">
-                    <p>简介</p>
-                </div>
-            </div>
-            <div class="introduce-list">
-                <a href="#">
-                    <img src="../../images/hjz.webp" alt="">
-                </a>
-                <div class="introduce-list-two">
-                    <p>简介</p>
-                </div>
-            </div>
-        </div>
-        <div class="introduces"> 
-            <div class="introduce-list">
-                <a href="https://humbleb11.github.io/">
-                    <img src="../../images/hlf.webp" alt="">
-                </a>
-                <div class="introduce-list-two">
-                    <p>简介</p>
-                </div>
-            </div>
-            <div class="introduce-list">
-                <a href="https://mystic2004.github.io/">
-                    <img src="../../images/lhh.webp" alt="">
-                </a>
-                <div class="introduce-list-two">
-                    <p>简介</p>
-                </div>
-            </div>
-            <div class="introduce-list">
-                <a href="https://ln3214.github.io/">
-                    <img src="../../images/lwj.png" alt="">
-                </a>
-                <div class="introduce-list-two">
-                    <p>简介</p>
-                </div>
-            </div>
-        </div>
-        <div class="introduces"> 
-            <div class="introduce-list">
-                <a href="https://7dayu6.github.io/">
-                    <img src="../../images/lxq.png" alt="">
-                </a>
-                <div class="introduce-list-two">
-                    <p>简介</p>
-                </div>
-            </div>
-            <div class="introduce-list">
-                <a href="#">
-                    <img src="../../images/slh.webp" alt="">
-                </a>
-                <div class="introduce-list-two">
-                    <p>简介</p>
-                </div>
-            </div>
-            <div class="introduce-list">
-                <a href="http://www.sunzimu.xyz/">
-                    <img src="../../images/szm.png" alt="">
-                </a>
-                <div class="introduce-list-two">
-                    <p>简介</p>
-                </div>
-            </div>
-        </div>
-        <div class="introduces"> 
-            <div class="introduce-list">
-                <a href="http://www.bz2116.cn/">
-                    <img src="../../images/zy.png" alt="">
-                </a>
-                <div class="introduce-list-two">
-                    <p>简介</p>
-                </div>
-            </div>
-            <div class="introduce-list">
-                <a href="https://glory-wan.cn/">
-                    <img src="../../images/wgr.png" alt="">
-                </a>
-                <div class="introduce-list-two">
-                    <p>简介</p>
-                </div>
-            </div>
-            <div class="introduce-list">
-                <a href="#">
-                    <img src="../../images/zhl.png" alt="">
-                </a>
-                <div class="introduce-list-two">
-                    <p>简介</p>
-                </div>
-            </div>
-        </div>
-
-        <div class="introduces"> 
-            <div class="introduce-list">
-                <a href="#">
-                    <img src="../../images/zqy.webp" alt="">
-                </a>
-                <div class="introduce-list-two">
-                    <p>简介</p>
-                </div>
-            </div>
-            <div class="introduce-list">
-                <a href="https://kyletang-0711.github.io/">
-                    <img src="../../images/tt.webp" alt="">
-                </a>
-                <div class="introduce-list-two">
-                    <p>简介</p>
-                </div>
-            </div>
-            <div class="introduce-list">
-                <a href="https://zlzzll.github.io/">
-                    <img src="../../images/zl.png" alt="">
-                </a>
-                <div class="introduce-list-two">
-                    <p>简介</p>
-                </div>
->>>>>>> 1432c8f55726e41066519ff31537634319554ad8
             </div>
         </div>
 
@@ -254,11 +122,7 @@
 
 <style>
 .introduce-list-two {
-<<<<<<< HEAD
     width: 250px;
-=======
-    width: 200px;
->>>>>>> 1432c8f55726e41066519ff31537634319554ad8
     height: 200px;
 }
 
@@ -292,7 +156,7 @@
     align-items: center;
 }
 
-.introduces{
+.introduces {
     display: flex;
     flex-direction: row;
 }
@@ -337,13 +201,6 @@ img {
         margin-top: 60px;
         margin-left: -160px;
     }
-<<<<<<< HEAD
-=======
-    .introduces {
-        flex-direction: column;
-        align-items: center;
-    }
->>>>>>> 1432c8f55726e41066519ff31537634319554ad8
 }
 
 @media screen and (max-width: 480px) {
@@ -361,6 +218,4 @@ img {
         margin: 10px 0;
     }
 }
-
-
 </style>
