@@ -7,4 +7,4 @@ or **[Developer Notice](README-dev-EN.md)**
 
 ### Page display
 
-![LLIEWeb](assets\LLIEWeb.jpg)
+![LLIEWeb](assets/LLIEWeb.jpg)
